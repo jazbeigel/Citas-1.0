@@ -1,10 +1,11 @@
-//import { useState } from 'react'
+
+import { useState } from 'react'
 import './App.css'
 import Citas from './componentes/Citas'
 import Forms from './componentes/Forms'
 
 function App() {
-  //const [count, setCount] = useState(0)
+  const [citas, setCitas] = useState([]);
 
   return (
     <>
@@ -14,11 +15,11 @@ function App() {
         <div class="row">
           <div class="one-half column">
             <h2>Crear mi Cita</h2>
-            <Forms />
+            <Forms arrayDeCitas={citas} funcionQueActualizaElArrayDeCitas={setCitas} />
           </div>
           <div class="one-half column">
             <h2>Administra tus citas</h2>
-            <Citas></Citas>
+            <Citas arrayDeCitas={citas} funcionQueActualizaElArrayDeCitas={setCitas} />
           </div>
         </div>
       </div>

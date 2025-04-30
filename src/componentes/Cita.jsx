@@ -1,4 +1,8 @@
+import { useState } from 'react'
+
 const Cita = ({mascota, duenio, fecha, hora, sintomas}) => {
+
+
   return (
     <div class="cita">
         <p>
