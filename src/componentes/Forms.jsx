@@ -1,4 +1,3 @@
-// Forms.jsx
 import { useState } from 'react';
 
 function Forms({ agregarCita }) { 
@@ -34,16 +33,16 @@ function Forms({ agregarCita }) {
   return (
     <form onSubmit={handleSubmit}>
         <label>Nombre Mascota</label>
-        <input type="text" name="nombre" value={datosCita.nombre} onChange={handleChange} class="u-full-width" placeholder="Nombre Mascota"/>
+        <input type="text" name="nombre" value={datosCita.nombre} onChange={handleChange} className="u-full-width" placeholder="Nombre Mascota"/>
         <label>Nombre Dueño</label>
-        <input type="text" name="duenio"  value={datosCita.duenio} onChange={handleChange} class="u-full-width" placeholder="Nombre dueño de la mascota" />
+        <input type="text" name="duenio"  value={datosCita.duenio} onChange={handleChange} className="u-full-width" placeholder="Nombre dueño de la mascota" />
         <label>Fecha</label>
-        <input type="date" name="fecha"  value={datosCita.fecha} onChange={handleChange} class="u-full-width"/>
+        <input type="date" name="fecha"  value={datosCita.fecha} onChange={handleChange} className="u-full-width"/>
         <label>hora</label>
-        <input type="time" name="hora" value={datosCita.hora} onChange={handleChange}  class="u-full-width" />
+        <input type="time" name="hora" value={datosCita.hora} onChange={handleChange}  className="u-full-width" />
         <label>Sintomas</label>
-        <textarea name="sintomas" value={datosCita.sintomas} onChange={handleChange} class="u-full-width"></textarea>
-        <button type="submit" class="u-full-width button-primary">Agregar Cita</button>
+        <textarea name="sintomas" value={datosCita.sintomas} onChange={handleChange} className="u-full-width"></textarea>
+        <button type="submit" className="u-full-width button-primary">Agregar Cita</button>
     </form>
   );
 }
